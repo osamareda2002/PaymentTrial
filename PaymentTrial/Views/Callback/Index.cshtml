@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    
+*@
+@{
+}
+
+<h2>Transaction Details</h2>
+
+<table class="table">
+    <tr><th>Transaction ID</th><td>@Model.Id</td></tr>
+    <tr><th>Pending</th><td>@Model.Pending</td></tr>
+    <tr><th>Amount (cents)</th><td>@Model.AmountCents</td></tr>
+    <tr><th>Success</th><td>@Model.Success</td></tr>
+    <tr><th>Is Authorized</th><td>@Model.IsAuth</td></tr>
+    <tr><th>Is Capture</th><td>@Model.IsCapture</td></tr>
+    <tr><th>Is Standalone Payment</th><td>@Model.IsStandalonePayment</td></tr>
+    <tr><th>Is Voided</th><td>@Model.IsVoided</td></tr>
+    <tr><th>Is Refunded</th><td>@Model.IsRefunded</td></tr>
+    <tr><th>Is 3D Secure</th><td>@Model.Is3dSecure</td></tr>
+    <tr><th>Integration ID</th><td>@Model.IntegrationId</td></tr>
+    <tr><th>Profile ID</th><td>@Model.ProfileId</td></tr>
+    <tr><th>Order ID</th><td>@Model.Order</td></tr>
+    <tr><th>Created At</th><td>@Model.CreatedAt</td></tr>
+    <tr><th>Currency</th><td>@Model.Currency</td></tr>
+    <tr><th>Merchant Commission</th><td>@Model.MerchantCommission</td></tr>
+    <tr><th>Discount Details</th><td>@Model.DiscountDetails</td></tr>
+    <tr><th>Error Occurred</th><td>@Model.ErrorOccurred</td></tr>
+    <tr><th>Transaction Response Code</th><td>@Model.TxnResponseCode</td></tr>
+    <tr><th>Message</th><td>@Model.DataMessage</td></tr>
+    <tr><th>Source Data Type</th><td>@Model.SourceDataType</td></tr>
+    <tr><th>Source Data PAN</th><td>@Model.SourceDataPan</td></tr>
+    <tr><th>Source Data Sub Type</th><td>@Model.SourceDataSubType</td></tr>
+</table>
